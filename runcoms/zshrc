@@ -5,6 +5,10 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+alias vup='vagrant halt && vagrant up'
+alias vssh='vagrant halt && vagrant up && vagrant ssh'
+alias brewupgrade='brew update && brew upgrade'
+
 POWERLEVEL9K_MODE='awesome-fontconfig'
 
 # Source Prezto.
