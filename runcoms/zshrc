@@ -5,9 +5,18 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+POWERLEVEL9K_MODE='awesome-fontconfig'
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Source awesome-fonts-terminal
+source ~/.fonts/*.sh
+
 # Customize to your needs...
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir_writable dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator time battery)
